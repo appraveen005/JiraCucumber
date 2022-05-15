@@ -1,0 +1,447 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-16T17:45:19.468Z",
+        "line": 28,
+        "name": "verify user should create issue in Jira",
+        "description": "",
+        "id": "jira-api-automation;verify-user-should-create-issue-in-jira;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1601818100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User should add header \"Content-Type\", \"application/json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_header(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111681400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User should add basic Auth \"appraveen005@gmail.com\", \"pl8LNoik58l1u9Hier3N2BE2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"appraveen005@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"pl8LNoik58l1u9Hier3N2BE2\"",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_basic_Auth(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3157700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should add body",
+            "match": {
+              "location": "StepDefinitionClass.user_should_add_body(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 7,
+              "value": "{\n    \"fields\": {\n       \"project\":\n       {\n          \"key\": \"JIR\"\n       },\n       \"summary\": \"RestAssured \",\n       \"description\": \"REST create issue using POST\",\n       \"issuetype\": {\n          \"name\": \"Bug\"\n       }\n   }\n} "
+            }
+          },
+          {
+            "result": {
+              "duration": 4541729000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User should add \"POST\" to send request \"https://appraveen005.atlassian.net/rest/api/2/issue/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"https://appraveen005.atlassian.net/rest/api/2/issue/\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_to_send_request(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89831600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user should verify \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_verify(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1384148100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User should verify \"key\" contains \"JIR\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"key\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"JIR\"",
+                  "offset": 34
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_verify_contains(String,String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-16T17:45:27.241Z",
+        "line": 55,
+        "name": "verify user should modify issue in Jira",
+        "description": "",
+        "id": "jira-api-automation;verify-user-should-modify-issue-in-jira;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1756700,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User should add header \"Content-Type\", \"application/json\" for modify",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_header_for_modify(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1175700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "User should add basic Auth \"appraveen005@gmail.com\", \"pl8LNoik58l1u9Hier3N2BE2\" for modify",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"appraveen005@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"pl8LNoik58l1u9Hier3N2BE2\"",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_basic_Auth_for_modify(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 197400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User should add body for modify",
+            "match": {
+              "location": "StepDefinitionClass.user_should_add_body_for_modify(String)"
+            },
+            "keyword": "And ",
+            "doc_string": {
+              "line": 35,
+              "value": "{\n    \"fields\": {\n       \"project\":\n       {\n          \"key\": \"JIR\"\n       },\n       \"summary\": \"Mod created issue\",\n       \"description\": \"issue REST API\",\n       \"issuetype\": {\n          \"name\": \"Bug\"\n       }\n   }\n}"
+            }
+          },
+          {
+            "result": {
+              "duration": 694526200,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "User should add \"PUT\" to send request \"https://appraveen005.atlassian.net/rest/api/2/issue/\" for modify",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"https://appraveen005.atlassian.net/rest/api/2/issue/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_to_send_request_for_modify(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 842500,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user should verify \"204\" for modify",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"204\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_verify_for_modify(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-16T17:45:27.942Z",
+        "line": 65,
+        "name": "verify user should delete created issue in Jira",
+        "description": "",
+        "id": "jira-api-automation;verify-user-should-delete-created-issue-in-jira;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1104900,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User should add header \"Content-Type\", \"application/json\" for delete",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_header_for_delete(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2005000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "User should add basic Auth \"appraveen005@gmail.com\", \"pl8LNoik58l1u9Hier3N2BE2\" for delete",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"appraveen005@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"pl8LNoik58l1u9Hier3N2BE2\"",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_basic_Auth_for_delete(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 787448300,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "User should add \"DELETE\" to send request \"https://appraveen005.atlassian.net/rest/api/3/issue/\" for delete",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"https://appraveen005.atlassian.net/rest/api/3/issue/\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_to_send_request_for_delete(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 184200,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user should verify \"204\" for delete",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"204\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_verify_for_delete(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-16T17:45:28.735Z",
+        "line": 76,
+        "name": "verify user should get issue in Jira",
+        "description": "",
+        "id": "jira-api-automation;verify-user-should-get-issue-in-jira;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 859000,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "User should add header \"Content-Type\", \"application/json\" for get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Content-Type\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 39
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_header_for_get(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1079800,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "User should add basic Auth \"appraveen005@gmail.com\", \"pl8LNoik58l1u9Hier3N2BE2\" for get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"appraveen005@gmail.com\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"pl8LNoik58l1u9Hier3N2BE2\"",
+                  "offset": 53
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_basic_Auth_for_get(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1134588800,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "User should add \"GET\" to send request \"https://appraveen005.atlassian.net/rest/api/2/search/\" for get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"https://appraveen005.atlassian.net/rest/api/2/search/\"",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_add_to_send_request_for_get(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 422221500,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user should verify \"200\" for get",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitionClass.user_should_verify_for_get(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Jira Api automation",
+    "description": "",
+    "id": "jira-api-automation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Jira.feature",
+    "tags": []
+  }
+]
